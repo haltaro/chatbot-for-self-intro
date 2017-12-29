@@ -5,16 +5,9 @@
 
   //初期メッセージ．
   botui.message.add({
-    content: 'はじめまして！haltaroと申します！'
-  }).then(excuse);
+    content: 'こんにちは！haltaroです！'
+  }).then(init);
 
-  // 社交辞令的なものを表示する関数．
-  function excuse() {
-    botui.message.add({
-      delay: 1000,
-      content: '本来は直接挨拶すべきところを，チャットボットで失礼致します．'
-    }).then(init);
-  }
 
   // 最初に，（見かけ上）質問を自由に入力してもらう関数．
   // 実際はちゃんと回答する気はない．
@@ -148,7 +141,7 @@
     }).then(function(){
       return botui.message.add({
         delay: 2000,
-        content: 'なお，本ウェブサイトの内容を，予告なく変更・削除する場合2があります．何卒ご理解のほど，よろしくお願い致します．'
+        content: 'なお，本ウェブサイトの内容を，予告なく変更・削除する場合があります．何卒ご理解のほど，よろしくお願い致します．'
       });
     }).then(askEnd);
   }
