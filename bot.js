@@ -1,7 +1,7 @@
 (function() {
 
   var msgIndex, key;
-  var botui = new BotUI('search-repo');
+  var botui = new BotUI('self-intro');
 
   //初期メッセージ．
   botui.message.add({
@@ -108,7 +108,7 @@
     }).then(function() {
       return botui.message.add({
         delay: 2000,
-        content: 'また，週末プログラマとして，c++，Python，JavaScriptなどで遊んでいます．'
+        content: 'また，日曜プログラマとして，c++，Python，JavaScriptなどで遊んでいます．'
       });
     }).then(function() {
       return botui.message.add({
@@ -122,7 +122,7 @@
   function showMemotaro() {
     botui.message.add({
       delay: 1000,
-      content: 'このウェブサイトには，Qiita以下で日記以上な技術的メモを書く予定です．'
+      content: 'このウェブサイトには，Qiita以下かつ日記以上な技術的メモを書く予定です．'
     }).then(function(){
       return botui.message.add({
         delay: 2000,
